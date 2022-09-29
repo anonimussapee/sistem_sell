@@ -6,32 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tu mp3</title>
     <link rel="stylesheet" href="./style/style.css">
+   <link rel="icon" href="https://images.pexels.com/photos/3756766/pexels-photo-3756766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  >
 </head>
 <body>
-    <nav class="title">
-        <h3>tu mp3</h3>
-    </nav>
-    <p>Lleva tu musica a todas partes, donde quieras!, cuando quieras!, a la hora que quieras!, nunca pares de sentirte bien! y ¿que esperas? Dale play.</p>
+    <div class="cont_title">
+        <nav class="title">
+            <h3>tu mp3</h3>
+        </nav>
+    </div>
+    <p class="texto_interno">Lleva tu musica a todas partes, donde quieras!, cuando quieras!, a la hora que quieras!, nunca pares de sentirte bien! y ¿que esperas? Dale play.</p>
     
     <section class="info">
         <div class="card_mp3">
             <nav><h3>tu mp3</h3></nav>
             <article>
-                <img src="" alt="logo">
+                <img src="https://images.pexels.com/photos/3756766/pexels-photo-3756766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="20%" alt="logo">
             </article>
-            <p>ingresa la URL del video que deseas descargar y dale click</p>
             <form >
-                <input type="Text" placeholder="ingresa la url del video elegido">
+                <label for="url_video" class="texto_interno">ingresa la URL del video que deseas descargar y dale click</label><br>
+                <input type="Text" placeholder="ingresa la url del video elegido" id="url_video">
                 <input type="button" value="DALE CLICK" id="buscar_mp3">
             </form>
         </div>
     </section>
     <section class="letra">
-        <h2>también obten la letra de tus canciones aquí:</h2>
+        <div class="card_lyrics">
+            <nav><h3>tu letra mp3</h3></nav>
+            <h2 >también obtén la letra de tus canciones favoritas:</h2>
+            <form >
+                <label for="url_lyrics" class="texto_interno">ingresa el URL del video que deseas obtener la letra y dale click</label><br>
+                <input type="text" placeholder="ingresa el url del video elegido">
+                <input type="button" value="DALE CLICK">
+            </form>
+        </div>
     </section>
     <footer>
         <div class="footer">
-            <h3>contacta con:</h3><p>J-DEVS</p><img src="" alt="imagen_git">
+            <h3>contacta con:</h3><p>J-DEVS</p>
+            <article>
+            <img src="https://media.istockphoto.com/photos/git-cubics-picture-id531467512?b=1&k=20&m=531467512&s=612x612&w=0&h=ycfmUr1I0yL3pxVW_Ffypwt7bAbdX69cOBONVxcKjmU=" alt="imagen_git">
+            </article>
         </div>
     </footer>       
 </body>
