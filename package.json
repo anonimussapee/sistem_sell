@@ -4,26 +4,26 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "data-uri-to-buffer": "^4.0.0",
+    "fetch-blob": "^3.2.0",
     "formdata-polyfill": "^4.0.10",
     "node-domexception": "^1.0.0",
     "node-fetch": "^3.2.10",
-    "data-uri-to-buffer": "^4.0.0",
-    "fetch-blob": "^3.2.0",
     "web-streams-polyfill": "^3.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anonimussapee/yoump3.git"
   },
-  "keywords": [
-    "javascript"
-  ],
+  "keywords": [],
   "author": "john cordova librededrogas420@gmail.com",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/anonimussapee/yoump3/issues"
   },
