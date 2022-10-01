@@ -16,16 +16,16 @@ padding-right: 10px;
     color:aliceblue;
     
 }
-.info, .letra{
+.info{
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.card_mp3 nav,.card_lyrics nav{
+.card_mp3 nav{
     border-radius: 13px;
 }
-.card_mp3 ,.card_lyrics{
+.card_mp3 {
     border: aliceblue 2px solid;
     border-radius: 15px;
     width: 75%;
@@ -62,6 +62,7 @@ margin-top: 30px;
 }
 input[type="text"]{
 font-size: 20px;
+margin: 15px;
 }
 .footer p:hover{
     color: antiquewhite;

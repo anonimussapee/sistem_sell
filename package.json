@@ -1,0 +1,32 @@
+{
+  "name": "yoump3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "formdata-polyfill": "^4.0.10",
+    "node-domexception": "^1.0.0",
+    "node-fetch": "^3.2.10",
+    "data-uri-to-buffer": "^4.0.0",
+    "fetch-blob": "^3.2.0",
+    "web-streams-polyfill": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anonimussapee/yoump3.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "john cordova librededrogas420@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anonimussapee/yoump3/issues"
+  },
+  "homepage": "https://github.com/anonimussapee/yoump3#readme",
+  "type": "module"
+}
