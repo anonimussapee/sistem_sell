@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+#root{
+  width: 100%;
+  height: auto;
+}
+
+/* this style will give life to disk music */
+.disk{
+  animation: spin 10s infinite linear;
+  object-fit: cover;
+  border: black solid 1px ;
+}
+.circle-black{
+  position: absolute;
+  background-color: black;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border-radius: 100%;
+  
+}
+
+@keyframes spin {
+
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
