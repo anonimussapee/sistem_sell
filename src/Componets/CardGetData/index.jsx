@@ -67,9 +67,9 @@ const CardGetData = (props) =>{
       <form  onSubmit={(e)=>handleSubmit(e)} name='formYt'>
         <label htmlFor="linkYt" className='relative flex flex-col items-center'>
           <button type='submit' id='btnYt'>
-            <ArrowDownCircleIcon  className='w-10 h-10 absolute top-3 left-3'/>
+            <ArrowDownCircleIcon  className='w-10 h-10 absolute top-3 left-2'/>
           </button>
-          <input type="text" placeholder='https://www.youtube.com/' className='pl-12 py-2 rounded-lg text-[1.8rem] border-cyan-800 border-[1px] outline-blue-700 w-[90%] min-w-[270px] max-w-[400px]' value={urlYt} onChange={(e)=>{
+          <input type="text" placeholder='https://www.youtube.com/' className='pl-12 py-2 rounded-lg text-[1.8rem] border-cyan-800 border-[1px] outline-blue-700 w-[275px]' value={urlYt} onChange={(e)=>{
             setUrlYt(e.target.value)
           }} onKeyPress={e=>{
             if(e.key === 'Enter'){

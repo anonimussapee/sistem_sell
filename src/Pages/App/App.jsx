@@ -4,12 +4,13 @@ import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { Home } from '../Home'
 import { NavBar } from '../../Componets/NavBar'
 import ImgMain from '../../assets/mainLogo.jpg'
+import { NotFound } from '../NotFound'
 
 const AppRoutes = () =>{
 
   let routes = useRoutes([
     {path:'/', element:<Home imgMain={ImgMain}/>},
-    {path:'/*', element:<Home />},
+    {path:'/*', element:<NotFound />},
 
   ])
 
