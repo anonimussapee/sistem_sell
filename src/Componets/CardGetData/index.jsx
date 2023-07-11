@@ -23,26 +23,29 @@ const CardGetData = (props) =>{
 
   const getData = async(link)=>{
 
-    // const url = `https://youtube-mp36.p.rapidapi.com/dl?id=${link}`;
-    // const options = {
-    //   method: 'GET',
-    //   headers: {
-    //     'X-RapidAPI-Key': '9ec8105266msh076540f029a5c95p1fab41jsn30454a7ed3b6',
-    //     'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
-    //   }
-    // };
+    let url;
+    let options;
+    if(props.op==='free'){
+      url = `https://youtube-mp3-download1.p.rapidapi.com/dl?id=${link}`;
+      options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': '9ec8105266msh076540f029a5c95p1fab41jsn30454a7ed3b6',
+          'X-RapidAPI-Host': 'youtube-mp3-download1.p.rapidapi.com'
+        }
+      };
+    }else if(props.op==='limit'){
 
-
-    const url = `https://youtube-mp3-download1.p.rapidapi.com/dl?id=${link}`;
-    const options = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': '9ec8105266msh076540f029a5c95p1fab41jsn30454a7ed3b6',
-        'X-RapidAPI-Host': 'youtube-mp3-download1.p.rapidapi.com'
-      }
-    };
-
-
+      url = `https://youtube-mp36.p.rapidapi.com/dl?id=${link}`;
+      options = {
+       method: 'GET',
+       headers: {
+         'X-RapidAPI-Key': '9ec8105266msh076540f029a5c95p1fab41jsn30454a7ed3b6',
+         'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
+       }
+     };
+ 
+    }
     try {
       const response = await fetch(url, options);
       const result = await response.json();
