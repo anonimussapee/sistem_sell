@@ -23,14 +23,26 @@ const CardGetData = (props) =>{
 
   const getData = async(link)=>{
 
-    const url = `https://youtube-mp36.p.rapidapi.com/dl?id=${link}`;
+    // const url = `https://youtube-mp36.p.rapidapi.com/dl?id=${link}`;
+    // const options = {
+    //   method: 'GET',
+    //   headers: {
+    //     'X-RapidAPI-Key': '9ec8105266msh076540f029a5c95p1fab41jsn30454a7ed3b6',
+    //     'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
+    //   }
+    // };
+
+
+    const url = `https://youtube-mp3-download1.p.rapidapi.com/dl?id=${link}`;
     const options = {
       method: 'GET',
       headers: {
         'X-RapidAPI-Key': '9ec8105266msh076540f029a5c95p1fab41jsn30454a7ed3b6',
-        'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
+        'X-RapidAPI-Host': 'youtube-mp3-download1.p.rapidapi.com'
       }
     };
+
+
     try {
       const response = await fetch(url, options);
       const result = await response.json();
@@ -42,7 +54,11 @@ const CardGetData = (props) =>{
 
   const handleSubmit = async(e) =>{
     e.preventDefault();
-    if(urlYt.length>0){
+    if(load){
+      setLoad(false)
+    }
+    setTimeout(async() => {
+       if(urlYt.length>0){
       setLoad(true)
       const makeUrl = clearLink(urlYt)
     console.log('soy un form y tengo este dato', makeUrl)
@@ -52,6 +68,8 @@ const CardGetData = (props) =>{
       setMakeYt(url.link)
     }
     }
+    }, 100);
+   
     
   }  
   return (
