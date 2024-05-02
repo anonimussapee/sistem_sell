@@ -7,7 +7,7 @@ const Loading = ({url}) => {
    setTimeout(() => {
     setReady(true)
     setNewurl(url)
-   }, 7000);
+   }, 1000);
 
     return (
       <>

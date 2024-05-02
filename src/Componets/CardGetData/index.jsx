@@ -68,6 +68,7 @@ const CardGetData = (props) =>{
     setUrlYt('')
     if(makeUrl){
       let url = await getData(makeUrl)
+
       setMakeYt(url.link)
     }
     }
